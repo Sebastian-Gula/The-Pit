@@ -1,0 +1,298 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1870922401977534}
+  m_IsPrefabParent: 1
+--- !u!1 &1870922401977534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4485443402122188}
+  - component: {fileID: 114796858647708124}
+  - component: {fileID: 114129138270828394}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4485443402122188
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1870922401977534}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114129138270828394
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1870922401977534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cc14f70fcbfcd049878f890a40294be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boardWidth: 100
+  boardHeight: 80
+  start: {fileID: 1933316348069260, guid: 114cfbc191f5b3e478ee309b81e5889c, type: 2}
+  exit: {fileID: 1156937034105508, guid: 12287934729dad440af44f898ad6cb20, type: 2}
+  floorTiles:
+  - {fileID: 1072992668508360, guid: 2b2e869b27d5e9541acd07e1055048f2, type: 2}
+  wall0Tiles:
+  - {fileID: 1815698764619976, guid: 0b74fe86f3c60d04fba2e4ba18add0c4, type: 2}
+  wall3Tiles:
+  - {fileID: 1783974688184612, guid: c8a1fefbfcefe7544820a26200700911, type: 2}
+  wall4Tiles:
+  - {fileID: 1479455417302118, guid: d0b4dd4dd114adf4483fe69ef738d6da, type: 2}
+  wall5Tiles:
+  - {fileID: 1719153217361322, guid: 3f680b943d4dabc428b1efe25671ea50, type: 2}
+  wall6Tiles:
+  - {fileID: 1046512042495270, guid: 5336a6ed4c9afa64990e1b93bb7ca162, type: 2}
+  wall7Tiles:
+  - {fileID: 1231697025726130, guid: 260c2759ef3570248a1c53eb6475c86f, type: 2}
+  wall8Tiles:
+  - {fileID: 1938266423536356, guid: 08c1b6432066fd34cb4ea88fdec97c04, type: 2}
+  wall9Tiles:
+  - {fileID: 1246030438666734, guid: ee405d1b77feb144fb8872f12ae8e616, type: 2}
+  wall10Tiles:
+  - {fileID: 1909784542684290, guid: 711bee2cd82b3624c836a43c0fca3e7b, type: 2}
+  wall11Tiles:
+  - {fileID: 1297430192335082, guid: 1ae98b3004f6395489d5276b8951413b, type: 2}
+  wall12Tiles:
+  - {fileID: 1004188818994016, guid: f1db104b350fa70408ac5eb511b34871, type: 2}
+  wall13Tiles:
+  - {fileID: 1542069588577210, guid: 94594596fa657d24491c750c04f7c132, type: 2}
+  wall14Tiles:
+  - {fileID: 1705200532654058, guid: e3644d2ddc54a654cbf4703cfd385184, type: 2}
+  wall15Tiles:
+  - {fileID: 1303756494265636, guid: 85b0f592bc12c0d45a48b4abf4a42e34, type: 2}
+  wall16Tiles:
+  - {fileID: 1271018557087454, guid: e312ddfd76049884ca935436807fc898, type: 2}
+  wall17Tiles:
+  - {fileID: 1199722527168132, guid: 86555c1586fad90419784baed1b4f3f8, type: 2}
+  enemies:
+  - {fileID: 116360, guid: 6b549cfed592d1c49b91151ec6ec0563, type: 2}
+  - {fileID: 1000011914203046, guid: d3d82d3c7aad0ed4ebd6d155ad6ff00d, type: 2}
+--- !u!114 &114796858647708124
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1870922401977534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf4e74e03ce344b4a8773163025cf4cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InFight: 0
+  PlayerTurn: 1
+  CurrentTurn: 0
+  enemies: []
+  MenuOn: 0
+  NormalAttack: 0
+  ShieldBash: 0
+  level: 0
+  allWeapons:
+  - {fileID: 1000012342529754, guid: 51f35ba892b50c041ad549d35b2e7ec2, type: 2}
+  - {fileID: 1000012753887842, guid: 255462d713bb85c48a8fb562f967f158, type: 2}
+  - {fileID: 1000011105501650, guid: 72de157396602ce4c8ce542ed3d75a80, type: 2}
+  - {fileID: 1000011632307810, guid: c4c95dfb44275f449b38ce1de44b88f9, type: 2}
+  - {fileID: 1000013543817562, guid: 8dbaebbb705d393408e0386c4f6f7e8f, type: 2}
+  - {fileID: 1000012246449332, guid: 664ae9e6829c19843af2b6eb90c588cc, type: 2}
+  allSets:
+  - {fileID: 1579512568774530, guid: 82de21236639a22499d89ba1b7e222dc, type: 2}
+  - {fileID: 1530849370224884, guid: ac238783e962a1a48b8579a6504d6076, type: 2}
+  - {fileID: 1961247465671856, guid: 26a4655bde2695043a434f41ac3ba0ad, type: 2}
+  allMagicItems:
+  - {fileID: 0}
+  - {fileID: 0}
+  allItems:
+  - {fileID: 1000010662360072, guid: ebfe7983f83e05948bb280b279b2547f, type: 2}
+  - {fileID: 1000010118440362, guid: 899c9e9aa68312e408db170d890f08a3, type: 2}
+  - {fileID: 1000010990127202, guid: 3170824f1fcf4bd48b9fd7ef078a4eb8, type: 2}
+  LoadingScreen: {fileID: 0}
+  InGameUI: {fileID: 0}
+  EndingScreen: {fileID: 0}
+  InGameMenu: {fileID: 0}
+  Chest: {fileID: 0}
+  DungeonLevel: {fileID: 0}
+  Screen: {fileID: 0}
+  EndTurnButton: {fileID: 0}
+  TurnText: {fileID: 0}
+  MovesText: {fileID: 0}
+  Skill1Text: {fileID: 0}
+  Skill2Text: {fileID: 0}
+  Skill3Text: {fileID: 0}
+  Skill1Image: {fileID: 0}
+  Skill2Image: {fileID: 0}
+  Skill3Image: {fileID: 0}
+  Item1Text: {fileID: 0}
+  Item2Text: {fileID: 0}
+  Item1Image: {fileID: 0}
+  Item2Image: {fileID: 0}
+  ReachedDungeonLevel: {fileID: 0}
+  ReachedLevel: {fileID: 0}
+  EnemiesKilled: {fileID: 0}
+  GoldGained: {fileID: 0}
+  PlayerPanel: {fileID: 0}
+  MapPanel: {fileID: 0}
+  InventoryPanel: {fileID: 0}
+  SkillsPanel: {fileID: 0}
+  BlacksmithPanel: {fileID: 0}
+  OptionsPanel: {fileID: 0}
+  ConfirmPanel: {fileID: 0}
+  MapButton: {fileID: 0}
+  BlacksmithButton: {fileID: 0}
+  Class: {fileID: 0}
+  PlayerLevel: {fileID: 0}
+  Health: {fileID: 0}
+  Mana: {fileID: 0}
+  Strength: {fileID: 0}
+  Agility: {fileID: 0}
+  Intelligence: {fileID: 0}
+  Speed: {fileID: 0}
+  Damage: {fileID: 0}
+  Armor: {fileID: 0}
+  PlayerGold: {fileID: 0}
+  ExperienceBar: {fileID: 0}
+  CurrentExperience: {fileID: 0}
+  ExperienceToNextLevel: {fileID: 0}
+  PlayerSlot1_Image: {fileID: 0}
+  PlayerSlot2_Image: {fileID: 0}
+  PlayerSlot1_Main: {fileID: 0}
+  PlayerSlot2_Main: {fileID: 0}
+  PlayerSlot1_Sub: {fileID: 0}
+  PlayerSlot2_Sub: {fileID: 0}
+  map: {fileID: 0}
+  InventorySlot1Image: {fileID: 0}
+  InventorySlot2Image: {fileID: 0}
+  InventorySlot3Image: {fileID: 0}
+  InventorySlot4Image: {fileID: 0}
+  InventorySlot5Image: {fileID: 0}
+  InventorySlot6Image: {fileID: 0}
+  InventorySlot7Image: {fileID: 0}
+  InventorySlot8Image: {fileID: 0}
+  InventorySlot9Image: {fileID: 0}
+  InventorySlot10Image: {fileID: 0}
+  InventorySlot11Image: {fileID: 0}
+  InventorySlot12Image: {fileID: 0}
+  InventorySlot13Image: {fileID: 0}
+  InventorySlot14Image: {fileID: 0}
+  InventorySlot15Image: {fileID: 0}
+  InventorySlot16Image: {fileID: 0}
+  InventorySlot1Button: {fileID: 0}
+  InventorySlot2Button: {fileID: 0}
+  InventorySlot3Button: {fileID: 0}
+  InventorySlot4Button: {fileID: 0}
+  InventorySlot5Button: {fileID: 0}
+  InventorySlot6Button: {fileID: 0}
+  InventorySlot7Button: {fileID: 0}
+  InventorySlot8Button: {fileID: 0}
+  InventorySlot9Button: {fileID: 0}
+  InventorySlot10Button: {fileID: 0}
+  InventorySlot11Button: {fileID: 0}
+  InventorySlot12Button: {fileID: 0}
+  InventorySlot13Button: {fileID: 0}
+  InventorySlot14Button: {fileID: 0}
+  InventorySlot15Button: {fileID: 0}
+  InventorySlot16Button: {fileID: 0}
+  InventoryName: {fileID: 0}
+  InventoryDescription: {fileID: 0}
+  InventoryAmmount: {fileID: 0}
+  MenuSkill1Image: {fileID: 0}
+  MenuSkill2Image: {fileID: 0}
+  MenuSkill3Image: {fileID: 0}
+  MenuSkill4Image: {fileID: 0}
+  MenuSkill5Image: {fileID: 0}
+  MenuSkill1NameBefore: {fileID: 0}
+  MenuSkill2NameBefore: {fileID: 0}
+  MenuSkill3NameBefore: {fileID: 0}
+  MenuSkill4NameBefore: {fileID: 0}
+  MenuSkill5NameBefore: {fileID: 0}
+  MenuSkill1NameAfter: {fileID: 0}
+  MenuSkill2NameAfter: {fileID: 0}
+  MenuSkill3NameAfter: {fileID: 0}
+  MenuSkill4NameAfter: {fileID: 0}
+  MenuSkill5NameAfter: {fileID: 0}
+  MenuSkill1DescriptionBefore: {fileID: 0}
+  MenuSkill2DescriptionBefore: {fileID: 0}
+  MenuSkill3DescriptionBefore: {fileID: 0}
+  MenuSkill4DescriptionBefore: {fileID: 0}
+  MenuSkill5DescriptionBefore: {fileID: 0}
+  MenuSkill1DescriptionAfter: {fileID: 0}
+  MenuSkill2DescriptionAfter: {fileID: 0}
+  MenuSkill3DescriptionAfter: {fileID: 0}
+  MenuSkill4DescriptionAfter: {fileID: 0}
+  MenuSkill5DescriptionAfter: {fileID: 0}
+  BlacksmithSlot1Image: {fileID: 0}
+  BlacksmithSlot2Image: {fileID: 0}
+  BlacksmithSlot3Image: {fileID: 0}
+  BlacksmithSlot4Image: {fileID: 0}
+  BlacksmithSlot5Image: {fileID: 0}
+  BlacksmithSlot6Image: {fileID: 0}
+  BlacksmithSlot7Image: {fileID: 0}
+  BlacksmithSlot8Image: {fileID: 0}
+  BlacksmithSlot9Image: {fileID: 0}
+  BlacksmithSlot10Image: {fileID: 0}
+  BlacksmithSlot11Image: {fileID: 0}
+  BlacksmithSlot12Image: {fileID: 0}
+  BlacksmithSlot13Image: {fileID: 0}
+  BlacksmithSlot14Image: {fileID: 0}
+  BlacksmithSlot15Image: {fileID: 0}
+  BlacksmithSlot16Image: {fileID: 0}
+  BlacksmithSlot1Button: {fileID: 0}
+  BlacksmithSlot2Button: {fileID: 0}
+  BlacksmithSlot3Button: {fileID: 0}
+  BlacksmithSlot4Button: {fileID: 0}
+  BlacksmithSlot5Button: {fileID: 0}
+  BlacksmithSlot6Button: {fileID: 0}
+  BlacksmithSlot7Button: {fileID: 0}
+  BlacksmithSlot8Button: {fileID: 0}
+  BlacksmithSlot9Button: {fileID: 0}
+  BlacksmithSlot10Button: {fileID: 0}
+  BlacksmithSlot11Button: {fileID: 0}
+  BlacksmithSlot12Button: {fileID: 0}
+  BlacksmithSlot13Button: {fileID: 0}
+  BlacksmithSlot14Button: {fileID: 0}
+  BlacksmithSlot15Button: {fileID: 0}
+  BlacksmithSlot16Button: {fileID: 0}
+  UpgradeMenuItemImage: {fileID: 0}
+  UpgradeMenuItemName: {fileID: 0}
+  UpgradeMenuUpgradeCost: {fileID: 0}
+  UpgradeMenuItemStats: {fileID: 0}
+  UpgradeMenuSellCost: {fileID: 0}
+  music: {fileID: 0}
+  sound: {fileID: 0}
+  zoom: {fileID: 0}
+  ChestSlot1_Image: {fileID: 0}
+  ChestSlot2_Image: {fileID: 0}
+  ChestSlot3_Image: {fileID: 0}
+  ChestSlot4_Image: {fileID: 0}
+  ChestSlot1_Main: {fileID: 0}
+  ChestSlot2_Main: {fileID: 0}
+  ChestSlot3_Main: {fileID: 0}
+  ChestSlot4_Main: {fileID: 0}
+  ChestSlot1_Sub: {fileID: 0}
+  ChestSlot2_Sub: {fileID: 0}
+  ChestSlot3_Sub: {fileID: 0}
+  ChestSlot4_Sub: {fileID: 0}
